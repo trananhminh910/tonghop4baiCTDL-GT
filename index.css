@@ -1,0 +1,182 @@
+* {
+	 		margin:0;
+	 		padding: 0;
+	 		box-sizing: border-box;
+	 		font-family: arial, sans-serif;
+	 	}
+	 	header {
+	 		display: flex;
+	 		flex-flow: row wrap;
+	 		align-content: center;
+	 		justify-content: center;
+	 		font-size: 2em;
+			color: #C7D3F9;
+			background: #E11717;
+	 		text-shadow:0px 0px 0 rgb(137,156,213),1px 1px 0 rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+	 	}
+		/*slide show Phan cong & thuc hien*/
+		.slide-show-container {
+			  position: relative;
+			}
+
+			/* Hide the images by default */
+			.mySlides {
+			  display: none;
+			}
+
+			/* Add a pointer when hovering over the thumbnail images */
+			.cursor {
+			  cursor: pointer;
+			}
+			.row {
+				text-align: center;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+
+			/* Next & previous buttons */
+			.prev,
+			.next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 60%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -50px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 20px;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			  -webkit-user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* Container for image text */
+			.caption-container {
+			  text-align: center;
+			  background-color: #222;
+			  padding: 2px 16px;
+			  color: white;
+			}
+
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Six columns side by side */
+			.column {
+			  float: left;
+			  width: 16.66%;
+			}
+
+			/* Add a transparency effect for thumnbail images */
+			.demo {
+			  opacity: 0.5;
+			  line-height: 20px;
+			  padding: 10px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 1.2em;
+			}
+
+			.active,
+			.demo:hover {
+			  opacity: 1;
+			}
+
+			.title-item {
+				color: #444;
+				text-shadow: 
+					1px 0px 1px #ccc, 0px 1px 1px #eee, 
+					2px 1px 1px #ccc, 1px 2px 1px #eee,
+					3px 2px 1px #ccc, 2px 3px 1px #eee,
+					4px 3px 1px #ccc, 3px 4px 1px #eee,
+					5px 4px 1px #ccc, 4px 5px 1px #eee,
+					6px 5px 1px #ccc, 5px 6px 1px #eee,
+					7px 6px 1px #ccc;
+
+			}
+
+			.mySlides {
+				position: fixed;
+				width: 100%;
+				height: 90%;
+				color: white;
+				cursor: pointer;
+			}
+			.mySlides:hover {
+				opacity: .7;
+			}
+			.slide-1 {
+				background-color: #cccccc;
+				background-image: linear-gradient(#403939,#E81E1E ,#CB8F8F, pink);
+			}
+			.slide-2 {
+				background-color: #cccccc;
+				background-image: linear-gradient(#403939,#F9A916 ,#F5E7BB, pink);
+			}
+			.slide-3 {
+				background-color: #cccccc;
+				background-image: linear-gradient(#403939,#19EA19 ,#B3FAB3, pink);
+			}
+			.slide-4 {
+				background-color: #cccccc;
+				background-image: linear-gradient(#403939,#EE82EE ,#F9CDF9, pink);
+			}
+
+			.column-1 {
+				background-color: red;
+			}
+			.column-2 {
+				background-color: orange;
+			}
+			.column-3 {
+				background-color: green;
+			}
+			.column-4 {
+				background-color: violet;
+			}
+
+			.slide-title {
+				text-align: center;
+				line-height: 300px;
+				font-size: 2em;
+			}
+			.title {
+				font-size:  2.3em;
+			}
+			.animate {
+				animation-name: animate;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes animate {
+				from { color: white;}
+				to {color: #7F7B7B;}
+			}
+	/*Iplement*/
+	/* Set height of body and the document to 100% to enable "full page tabs" */
+
